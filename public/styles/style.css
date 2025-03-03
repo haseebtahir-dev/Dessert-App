@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.dessert{
+    background-color: hsl(13, 31%, 94%);
+    position: relative;
+}
+
+.col-8{
+    width: 66.67%;
+    padding: 0 15px;
+}
+
+.col-4{
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.logo{
+    padding: 20px 0;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.list {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.addto-cart {  
+    width: 105px; 
+    position: absolute;
+    top: 67%;
+    left: 22%;
+    background-color: hsl(20, 50%, 98%);  
+    border: 1px solid hsl(12, 20%, 44%);  
+    padding: 0px 12px;  
+    border-radius: 23px;  
+}
+
+
+.cart-icon{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.cart-icon img{
+    width: 15px;
+}
+
+.cart-icon p{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.quantity-btn {
+    border: none;
+    background-color: transparent;
+    height: 12px;
+}
+
+.quantity-btn img {
+    width: 13px;
+    border: 1px solid hsl(13, 31%, 94%);
+    border-radius: 35px;
+    padding: 2px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.quantity span{
+    color: hsl(13, 31%, 94%);
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.item-name{
+    font-size: 10px;
+    font-weight: 500; 
+    color: hsl(12, 20%, 44%);
+}
+
+.item-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(14, 65%, 9%);
+    padding: 5px 0;
+}
+
+.item-price{
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(14, 86%, 42%);
+}
+
+.cart{
+    background-color: hsl(20, 50%, 98%);
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin-top: 75px;
+}
+
+.cart-heading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cart-item-price {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.item-quantity{
+    font-size: 11px;
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+
+.incart-price{
+    font-size: 11px;
+    color: hsl(7, 20%, 60%);
+    font-weight: 600;
+}
+
+.item-total{
+    font-size: 11px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 600;
+}
+
+.cart-item-name {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.remove-item-cart {
+    border: none;
+    background-color: transparent;
+}
+
+.remove-item-cart img {
+    border-radius: 10px;
+    border: 1px solid hsl(7, 20%, 60%);
+    padding: 1px;
+    cursor: pointer;
+}
+
+.remove-item-cart img:hover{
+    filter: hue-rotate(12deg) saturate(20%) brightness(44%);
+    border: 1px solid hsl(12, 20%, 44%);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-border {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(13, 31%, 94%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-total p{
+    font-size: 12px;
+    color: hsl(7, 20%, 60%);
+}
+
+.total-amount{
+    font-size: 14px !important;
+    font-weight: 700;
+    color: black !important;
+}
+
+.deliver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: hsl(13, 31%, 94%);
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.deliver p{
+    font-size: 11px;
+    color: hsl(12, 20%, 44%);
+}
+
+.order-confirm button {
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+    width: 100%;
+    border-radius: 21px;
+    padding: 11px;
+    color: hsl(14, 25%, 72%);
+    cursor: pointer;
+}
+
+.cart-content{
+    display: none;
+}
+
+.empty-cart-content{
+    font-size: 12px;
+    color: hsl(12, 20%, 44%);
+    text-align: center;
+    font-weight: 600;
+}
+
+.order-confirm .container{
+    max-width: 500px;
+}
+
+.confirm-content{
+    background-color: hsl(20, 50%, 98%);
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+
+.confirm-img {
+    width: 25px;
+}
+
+.confirm-img img {
+    width: 100%;
+}
+
+.confirm-content p{
+    font-size: 10px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+.item-img {
+    width: 20px;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+
+
+
+
+/* Specific range for 820px - 853px */
+@media screen and (max-width: 853px) and (min-width: 820px) {
+    .addto-cart {
+        top: 58% !important;
+        left: 16% !important;
+    }
+}
+
+/* For screens between 852px and 912px */
+@media screen and (max-width: 912px) and (min-width: 852px) {
+    .addto-cart {
+        top: 61% !important;
+        left: 20% !important;
+    }
+}
+
+/* General media query for 1024px and below */
+@media screen and (max-width: 1024px) {
+    .addto-cart {
+        top: 64%;
+    }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+    .addto-cart {
+        top: 56%;
+        left: 12%;
+    }
+}
+
+/* For screens 767px and below, making elements take full width */
+@media screen and (max-width: 767px) {
+    .col-4, .col-8 {
+        width: 100%;
+    }
+    .addto-cart {
+        top: 77% !important;
+        left: 33% !important;
+    }
+}
+
+/* For smaller screens (430px - 415px) */
+@media screen and (max-width: 430px) and (min-width: 415px) {
+    .addto-cart {
+        top: 79% !important;
+        left: 36% !important;
+    }
+}
+
+/* For screens between 414px and 376px */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+    .addto-cart {
+        top: 79% !important;
+        left: 34% !important;
+    }
+}
+
+/* For screens between 343px and 360px */
+@media screen and (max-width: 360px) and (min-width: 343px) {
+    .addto-cart {
+        top: 76% !important;
+    }
+}
+
+/* Specific range for 412px - 376px */
+@media screen and (max-width: 412px) and (min-width: 376px) {
+    .addto-cart {
+        top: 79% !important;
+        left: 35%;
+    }
+}
+
+/* For screens between 390px and 376px */
+@media screen and (max-width: 390px) and (min-width: 376px) {
+    .addto-cart {
+        top: 77% !important;
+        left: 35%;
+    }
+}
+
+/* For medium screens (540px - 450px) */
+@media screen and (max-width: 540px) and (min-width: 450px) {
+    .addto-cart {
+        top: 83% !important;
+        left: 37% !important;
+    }
+}
+
+/* For very small screens (344px and below) */
+@media screen and (max-width: 344px) {
+    .addto-cart {
+        top: 74% !important;
+    }
+}
